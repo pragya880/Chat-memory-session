@@ -5,10 +5,10 @@ from langchain.memory import ConversationBufferMemory, MongoDBChatMessageHistory
 from langchain.prompts.prompt import PromptTemplate
 
 # Setup mongodb client
-uri = "mongodb+srv://raipragya256:<password>@cluster0.fym3xyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0uri"
+uri = "mongodb+srv://username:<password>@cluster0.fym3xyk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0uri"
 
 # Setup openai
-llm = OpenAI(api_key="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", temperature=0.5, desc="Chatbot")
+llm = OpenAI(api_key="apikey", temperature=0.5, desc="Chatbot")
 
 app = FastAPI(desc="Chatbot")
 
